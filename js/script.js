@@ -44,6 +44,8 @@ var isMobile = {
 //     }
 //     });
 
+
+// =================menu burger =================
 window.onload = function () {
   document.addEventListener("click", documentActions);
 
@@ -211,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const forms = document.querySelectorAll("form");
 
-  const massage = {
+  const message = {
     loading: "loading",
     success: "Спасибо, мы скоро с вами свяжемся",
     failure: "Произошла ошибка отправки",
@@ -283,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 8000);
   }
 
-  //таймер
+  //================таймер==================
   const deadline = "2022-08-15";
   const end = document.querySelector(".promo_endtime");
   end.innerHTML += deadline;
@@ -335,3 +337,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setTimer(".timer", deadline);
 });
+
+//==================/testing======================
+
+let nextBtn = document.querySelectorAll('.btn-next'),
+  prevBtn = document.querySelectorAll('.btn-prev'),
+  testWrapper = document.querySelector('.future_form_wrapper'),
+  innerWindow = document.querySelector('.future_form_info'),
+  width = window.getComputedStyle(testWrapper).width;
+let offset = 0;
+  
+nextBtn.forEach(item => {
+  item.addEventListener('click', () => {
+    //добавляем длину в переменную 
+    offset += +(width.slice(0, width.length - 2));
+    innerWindow.style.transform = `translateX(-${offset}px)`;
+    console.log(width);
+  });
+});
+
+ //==клик назад==
+prevBtn.forEach(item => {  
+  item.addEventListener('click', () => {  
+        offset -= +(width.slice(0, width.length - 2)); 
+    innerWindow.style.transform = `translateX(-${offset}px)`;
+
+  });
+});
+

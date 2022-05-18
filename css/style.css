@@ -311,7 +311,7 @@ body {
   border-radius: 15px;
   padding: 17px 66px;
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 10px 2px rgba(13, 135, 228, 0.2);
+  box-shadow: 2px 2px 2px 2px rgba(13, 135, 228, 0.2);
   border: 2px solid #2F80ED;
 }
 
@@ -824,20 +824,36 @@ input:focus:-ms-input-placeholder {
 .future_form {
   display: block;
   margin: 0 auto;
-  width: 800px;
-  height: 366px;
+  width: 720px;
+  height: 400px;
   border: 1px solid #2F80ED;
   border-radius: 12px;
-  padding: 32px 20px 24px 20px;
+  padding: 20px 30px 24px 30px;
   position: relative;
   margin-bottom: 90px;
+  
+  transition: 0.6s all;
+}
+
+.future_form_wrapper {
+  width: 650px;
+  overflow: hidden;
 }
 
 .future_form_info {
   display: flex;
+  width: 400%;
+  height: 400px;
+  align-items: start;
+}
+
+.future_form-item {
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  width: 650px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .future_form_title {
@@ -845,20 +861,54 @@ input:focus:-ms-input-placeholder {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 12px;
+  align-self: center;
+  text-align: center;
 }
 
 .future_form_subtitle {
   font-size: 16px;
   line-height: 140%;
   color: #4F4F4F;
+  margin-bottom: 40px;
+  align-self: center;
+}
+
+.future_form_radio {
   margin-bottom: 30px;
 }
 
+.future_btn_block{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .future_button {
-  position: absolute;
-  top: 280px;
-  right: 80px;
+  align-self: end;
   padding: 10px 55px;
+}
+
+.future_form_contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.future_form_contacts .contacts_form_input_name {
+  width: 250px;
+  
+}
+
+.future_form_contacts .contacts_form_input_tel{
+ width: 250px;
+}
+
+.future_form_contacts .contacts_form_submit_btn {
+  padding: 20px;
+}
+
+.future_form_contacts .contacts_form_submit_info {
+  width: 300px;
 }
 
 label {
@@ -869,6 +919,7 @@ label {
   cursor: pointer;
   font-size: 16px;
   line-height: 140%;
+  margin-bottom: 10px;
 }
 
 label input[type=radio] {
@@ -887,6 +938,7 @@ label span {
   background-color: #ddd;
   border-radius: 50%;
   transition: 0.3s background-color;
+  
 }
 
 label span:after {
@@ -900,6 +952,7 @@ label span:after {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  
 }
 
 label:hover span {
@@ -996,6 +1049,10 @@ label input:checked ~ span:after {
 
 .contract_subtitle {
   margin-bottom: 40px;
+}
+
+.contacts_btn {   
+  width: 100%;
 }
 
 .contract_content {
@@ -1290,9 +1347,8 @@ label input:checked ~ span:after {
 }
 
 .contacts_form_submit_btn {
-  height: 72px;
-  width: 370px;
-  padding: 25px 0;
+  
+  padding: 20px 20px;
   margin-bottom: 12px;
 }
 
@@ -1545,6 +1601,8 @@ label input:checked ~ span:after {
     margin-right: 0;
     align-items: center;
   }
+
+ 
 
   .contacts_form_block {
     display: flex;

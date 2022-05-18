@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="/img/icon.ico" /> 
+    <link rel="stylesheet" href="css/style.css">
     
     </script>
     <title>Furniture</title>
@@ -69,7 +70,7 @@
         </div>
     </div>
 </main>
-        <div class="work">
+<div class="work">
     <div class="work_wrapper">
         <div class="work_container _container">
             <h2 class="work_title _title_block">Ваша работа будет состоять из 5 этапов</h2>
@@ -132,7 +133,7 @@
         </div>
     </div>
 </div>
-        <div class="promotion">
+<div class="promotion">
     <div class="_container">
         <div class="promotion__text">
             <div class="title _title_block">Акция для новых клиентов!</div>
@@ -167,7 +168,7 @@
         </div>
     </div>
 </div>
-        <div class="condition">
+<div class="condition">
     <div class="condition_wrapper">
         <div class="condition_conteiner _container">
             <h2 class="condition_title _title_block">Даем лучшие условия труда </br>
@@ -237,39 +238,116 @@
         </div>
     </div>
 </div>
-        <div class="future">
+<div class="future">
     <div class="future_wrapper">
         <div class="future_container _container">
             <h2 class="future_title _title_block">Рассчитайте вашу будущую зарплату<br> в Domeo</h2>
             <div class="future_subtitle _subtitle_block">ответьте на 2 ключевых вопроса по, которым мы определим вашу точную зарплату</div>
+            
             <div class="future_form">
-                <form class="future_form_info">
-                    <h3 class="future_form_title">Сколько объектов вы готовы укомплектовывать в месяц?</h3>
-                    <div class="future_form_subtitle">в выбранной ранее специализации</div>
-                    <div class="future_form_radio">
-                        <label>1-5
-                            <input type="radio" name="fruit" checked/>
-                            <span></span>
-                          </label>
-                          <label>5-10
-                            <input type="radio" name="fruit" />
-                            <span></span>
-                          </label>
-                          <label>Более 10
-                            <input type="radio" name="fruit" />
-                            <span></span>
-                          </label>
-    
-                    </div>
-                    
-                    <a href="#" class="future_button btn">далее</a>
-                </form>
+                <div class="future_form_wrapper">
+                    <form class="future_form_info">
+                        <div class="future_form-item">
+                             <h3 class="future_form_title">Сколько объектов вы готовы укомплектовывать в месяц?</h3>
+                             <div class="future_form_subtitle">в выбранной ранее специализации</div>
+                             <div class="future_form_radio">
+                                 <label>1-5
+                                     <input type="radio" name="total" checked/>
+                                     <span></span>
+                                 </label>
+                                 <label>5-10
+                                     <input type="radio" name="total" />
+                                     <span></span>
+                                 </label>
+                                 <label>Более 10
+                                     <input type="radio" name="total" />
+                                     <span></span>
+                                 </label>
+                             </div>
+                             
+                             <button type="button" class="future_button btn btn-next">далее</button>
+                        </div>
+     
+                        <div class="future_form-item">
+                             <h3 class="future_form_title">Сколько у вас лет опыта?</h3>
+                             <div class="future_form_subtitle">в комплектации мебели</div>
+                             <div class="future_form_radio">
+                                 <label>До 1 года
+                                     <input type="radio" name="years" checked/>
+                                     <span></span>
+                                 </label>
+                                 <label>От 2 до 3 лет
+                                     <input type="radio" name="years" />
+                                     <span></span>
+                                 </label>
+                                 <label>От 3 и более
+                                     <input type="radio" name="years" />
+                                     <span></span>
+                                 </label>
+                             </div>
+     
+                             <div class="future_btn_block">
+                                <button type="button" class="future_button btn btn-prev">назад</button>
+                                <button type="button" class="future_button btn btn-next">далее</button>
+                             </div>
+                             
+                        </div>
+     
+                        <div class="future_form-item">
+                             <h3 class="future_form_title">Сколько объектов вы укомплектовали?</h3>
+                             <div class="future_form_subtitle">в выбранной ранее специализации</div>
+                             <div class="future_form_radio">
+                                 <label>От 1 - 10
+                                     <input type="radio" name="totalOld" checked/>
+                                     <span></span>
+                                 </label>
+                                 <label>От 10 - 50
+                                     <input type="radio" name="totalOld" />
+                                     <span></span>
+                                 </label>
+                                 <label>Более 50
+                                     <input type="radio" name="totalOld" />
+                                     <span></span>
+                                 </label>
+                             </div>
+                             <div class="future_btn_block">
+                                <button type="button" class="future_button btn btn-prev">назад</button>
+                                <button type="button" class="future_button btn btn-next">далее</button>
+                             </div>
+                        </div>
+     
+                        <div class="future_form-item">
+                             <h3 class="future_form_title">Остался последний шаг</h3>
+                             <div class="future_form_subtitle">заполните форму для расчет вашей будущей зарплаты</div>
+                             
+                             <div class="future_form_contacts">
+                                <div class="contacts_form_column1">
+                                    <div class="contacts_form_name_">Ввдите ваше имя</div>
+                                    <input type="text" class="contacts_form_input_name" placeholder="Например, Алексей" maxlength="13">
+                                </div>
+                                <div class="contacts_form_column2">
+                                    <div class="contacts_form_tel_">Ввдите ваш телефон</div>
+                                    <input type="tel" class="contacts_form_input_tel tel_input" name="phone" id="phone3"  placeholder="+7 (___) ___-____">
+                                </div>
+                                <div class="contacts_form_submit">
+                                    <button type="submit" class="contacts_form_submit_btn btn">Рассчитать заработную плату</button>   
+                                    <div class="contacts_form_submit_info">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c 
+                                    <a href="#" class="contacts_form_politic">политикой конфиденциальности</a>   
+                                    </div>
+                                </div>
+                             </div>
+                             
+                 
+                        </div>
+                     </form>
+                </div>
+                
                 
             </div>
         </div>
     </div>
 </div>
-        <div class="steps">
+<div class="steps">
     <div class="steps_wrapper">
         <div class="steps_container _container">
             <h2 class="steps_title _title_block">Устройтесь на работу вашей мечты<br> за 4 шага</h2>
@@ -311,7 +389,7 @@
         </div>
     </div>
 </div>
-        <div class="contract">
+<div class="contract">
     <div class="contract_wrapper">
         <div class="contract_container _container">
             <h2 class="contract_title _title_block">Мы не обманем вас с зарплатой и другими договоренностями</h2>
@@ -320,10 +398,10 @@
             <div class="contract_content">
                 <div class="contract_content_left">
                     <div class="contract_content_link">
-                        <a href='https://www.youtube.com/embed/_V0hvU4d7-o' class="cotract_content_left_text _icon-clock">Узнайте больше о компании Domeo за 1 минуту</a>
+                        <a href='https://youtu.be/iZgKPRb0SQk' class="cotract_content_left_text _icon-clock">Узнайте больше о компании Domeo за 1 минуту</a>
                     </div>
                     <div class="contract_content_left_video">
-                        <iframe width="690" height="420" src="https://www.youtube.com/embed/_V0hvU4d7-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contract_video_youtube"></iframe>
+                        <iframe width="690" height="420" src="https://www.youtube.com/embed/iZgKPRb0SQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="contract_video_youtube"></iframe>
                     </div>
                 </div>
                 <div class="contract_content_right">
@@ -355,7 +433,7 @@
         </div>
     </div>
 </div>
-        <div class="interview">
+<div class="interview">
     <div class="interview_wrapper">
         <div class="interview_container _container">
             <h2 class="interview_title _title_block">Запишитесь прямо сейчас на онлайн собеседование</h2>
@@ -398,7 +476,7 @@
         </div>
     </div>
 </div>
-        <div class="contacts">
+<div class="contacts">
     <div class="contacts_wrapper">
         <div class="contacts_container _container">
             <div class="contacts_title _title_block">Вы всегда можете придти к нам в офис для личного знакомства</div>
@@ -416,7 +494,7 @@
                             <input type="tel" class="contacts_form_input_tel tel_input" name="phone" id="phone3"  placeholder="+7 (___) ___-____">
                         </div>
                         <div class="contacts_form_submit">
-                            <a href="#" class="contacts_form_submit_btn btn">Посетить офис</a>   
+                            <a href="#" class="contacts_form_submit_btn btn contacts_btn">Посетить офис</a>   
                             <div class="contacts_form_submit_info">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c 
                             <a href="#" class="contacts_form_politic">политикой конфиденциальности</a>   
                             </div>
@@ -440,8 +518,6 @@
 </div>
     </div>
    
-    
-
     <footer class="footer">
     <div class="footer_container _container">
         <div class="header_content footer_content">
