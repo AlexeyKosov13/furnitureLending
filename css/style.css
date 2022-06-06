@@ -1429,7 +1429,7 @@ label input:checked ~ span:after {
 }
 
 .promotion__timer .timer__block {
-  width: 102px;
+  width: 90px;
   height: 120px;
   background: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
@@ -1805,6 +1805,10 @@ label input:checked ~ span:after {
     display: none;
   }
 
+  .main_img {
+    display: none;
+  }
+
   .main_info_advant {
     margin-bottom: 20px;
     text-align: center;
@@ -1826,13 +1830,43 @@ label input:checked ~ span:after {
     text-align: center;
   }
 
+  .promotion_title {
+    font-size: 16px;
+  }
+
+  .promotion__timer .timer__block {
+    width: 50px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  #days {
+    font-size: 24px;
+  }
+
+  #hours {
+    font-size: 24px;
+  }
+
+  #minutes {
+    font-size: 24px;
+  }
+
+  #seconds {
+    font-size: 24px;
+  }
+
   .condition_content {
     flex-direction: column;
     align-items: center;
   }
 
   .future_form {
-    width: 400px;
+    width: 550px;
+  }
+
+  .future_form_wrapper {
+    width: 500px;
   }
 
   .contract_video_youtube {
